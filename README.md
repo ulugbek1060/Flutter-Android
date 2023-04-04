@@ -20,7 +20,7 @@ Open flutter android application from other app
 <activity/>
 ```
 
-In this example, we add an intent filter that listens for URLs with the `myapp://open_flutter_app` scheme and launches our `MainActivity`.
+In this example, we add an intent filter that listens for URLs with the `example_scheme://example_host.com` scheme and launches our `MainActivity`.
 
 2. In the other app that wants to launch your Flutter Android app, create a new `Intent` with a custom scheme URL that matches your Flutter Android app's intent filter:
 
