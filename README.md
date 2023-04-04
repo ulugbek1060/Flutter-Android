@@ -37,3 +37,5 @@ In this example, we add an intent filter that listens for URLs with the `myapp:/
 In this example, we create a new `Intent`, set its action to `ACTION_VIEW`, and set its data URI to match our Flutter Android app's custom scheme URL.
 
 We then call `startActivity()` with our intent to launch our Flutter Android app's main activity.
+
+Plugin sharing data: https://github.com/KasemJaffer/receive_sharing_intent
