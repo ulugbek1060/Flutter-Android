@@ -1,8 +1,6 @@
 # Flutter-Android
 Open flutter android application from other app
 
-Another way to open a Flutter Android application from another app is to use a custom scheme URL. Here's an example of how to do this:
-
 1. In your Flutter Android app, add an intent filter to the `AndroidManifest.xml` file for the activity you want to launch. For example, if you want to launch the main activity, add the following intent filter to your `MainActivity` declaration:
 
 ```xml
@@ -14,7 +12,7 @@ Another way to open a Flutter Android application from another app is to use a c
                <action android:name="android.intent.action.VIEW" />
                <category android:name="android.intent.category.DEFAULT" />
                <category android:name="android.intent.category.BROWSABLE" />
-               <!--TODO:  Add this filter, if you want support opening urls into your app-->
+            
                <data
                    android:scheme="example_scheme"
                    android:host="example_host.com"/>
@@ -39,5 +37,3 @@ In this example, we add an intent filter that listens for URLs with the `myapp:/
 In this example, we create a new `Intent`, set its action to `ACTION_VIEW`, and set its data URI to match our Flutter Android app's custom scheme URL.
 
 We then call `startActivity()` with our intent to launch our Flutter Android app's main activity.
-
-I hope this helps! Let me know if you have any further questions.
